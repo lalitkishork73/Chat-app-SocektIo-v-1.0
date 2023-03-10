@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Application</title>
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+      <script src="https://cdn.socket.io/4.4.1/socket.io.min.js"></script>
+</head>
+<body>
+    <main class="main-container">
+        <div class="container">
+            <h1>ChatsApp</h1>
+            <div class="overbody">
+                <div class="chat-container">
+                    <div class="chat-box">
+                        <ul class="" id="list-chats">
+                           
+                          
+                        </ul>
+                    </div>
+                </div>
+                <div class="message-box">
+                    <input type="text" placeholder="Message" id="input">
+                    <button id="submit">
+                        <span class="material-symbols-rounded">
+                            send
+                        </span>
+                    </button>
+            </div>
+        </div>
+    </main>
+   
+    <!-- <script type="module">
+        import { io } from "https://cdn.socket.io/4.4.2/socket.io.esm.min.js";
+        
+        const socket = io('http://localhost:3001');
+        socket.on('connection');
+        </script> -->
+        <script type="module" src="./index.js"></script>
+</body>
+</html>
